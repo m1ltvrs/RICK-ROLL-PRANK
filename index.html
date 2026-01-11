@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>You've been pranked!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .message-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
 <body>
-<script>
-window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-</script>
+    <div class="message-container">
+        <h1>Loading something important...</h1>
+        <p>Please wait.</p>
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; 
+        }, 3000); 
+    </script>
 </body>
 </html>
